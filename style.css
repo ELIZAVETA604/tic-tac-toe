@@ -1,0 +1,39 @@
+.tic-tac-toe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 60px;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 4px;
+  }
+  
+  .board div {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    background-color: #aba2a275;
+    cursor: pointer;
+  }
+  
+  .board div:hover {
+    background-color: #3b363655;
+  }
+
+  p{
+    font-size: 20pt;
+  }
+
+  button {
+    font-size: 20pt;
+    cursor: pointer;
+  }
+  

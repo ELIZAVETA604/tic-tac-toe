@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Крестики-нолики</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <div class="tic-tac-toe">
+      <h1>Крестики-нолики</h1>
+      <div class="board">
+        <div v-for="(cell, index) in cells" :key="index" @click="handleClick(index)">
+          {{ cell }}
+        </div>
+      </div>
+      <p>{{ status }}</p>
+      <button @click="restartGame">Начать заново</button>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
